@@ -1,0 +1,14 @@
+# Packaged files
+*.gem
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Thumbs.db
+
+# Applications
+.sass-cache/*
+.idea/*
+node_modules
+.env
+*.css.map

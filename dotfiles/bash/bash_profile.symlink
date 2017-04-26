@@ -1,0 +1,19 @@
+# source the users bashrc if it exists
+if [ -f "${HOME}/.bashrc" ] ; then
+  source "${HOME}/.bashrc"
+fi
+
+export PATH="/usr/local/sbin:$PATH"
+
+export PATH="$HOME/.composer/vendor/bin:$PATH"
+
+if [ -d "$PWD/node_modules/.bin" ]; then 
+    export PATH="$PWD/node_modules/.bin:$PATH"
+fi
+
+# Setup SSH Agent
+SSH_ENV="$HOME/.ssh/environment"
+
+# eval "$(rbenv init -)"
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
